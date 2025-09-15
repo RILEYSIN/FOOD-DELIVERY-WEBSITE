@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - OnyxLuxe Kitchen</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <div class="signup-header">
+                <a href="/" class="brand-logo">OnyxLuxe Kitchen</a>
+                <h2>Create Your Account</h2>
+                <p>Join us to get your favorite meals faster!</p>
+            </div>
+
+            <form class="signup-form" id="signupForm">
+                <div class="input-group">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn-signup">Sign Up</button>
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn google"><i class='bx bxl-google'></i> Sign Up with Google</button>
+                <button class="social-btn facebook"><i class='bx bxl-facebook-circle'></i> Sign Up with
+                    Facebook</button>
+            </div>
+
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+    <script>
+        // Redirect to homepage on sign up
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            window.location.href = 'homepage.html';
+        });
+    </script>
+</body>
+
+</html>
